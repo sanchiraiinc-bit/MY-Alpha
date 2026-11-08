@@ -1,0 +1,1067 @@
+let's build ALPHA X properly. 🚀
+
+Since you're using AI to develop the application and don't have much programming knowledge, I'll give you something practical: a complete development guide with ready-to-copy prompts.
+
+You can give these prompts to your AI app builder one at a time. The AI will help you create each part of ALPHA X.
+
+My goal is to help you create something that has the capabilities of Amazon and Flipkart, with your own identity and features.
+PART 1. Understand the complete ALPHA X system
+First, understand that ALPHA X shouldn't be just one application. It should have three interconnected systems.
+System	Users	Purpose
+ALPHA X Shopping	Customers	Buy products
+ALPHA X Seller	Sellers	Sell and manage products
+ALPHA X Admin	Your company	Manage everything
+
+
+Your architecture should look like this:
+                 ALPHA X
+                    |
+             MAIN BACKEND
+                    |
+       +------------+------------+
+       |            |            |
+    CUSTOMER      SELLER        ADMIN
+       |            |            |
+    Shopping    Sell Products  Control App
+       |            |            |
+       +------------+------------+
+                    |
+             DATABASE
+                    |
+     +--------------+-------------+
+     |              |             |
+  Payments       Delivery      Inventory
+
+All three systems should use the same central backend and database with proper access permissions.
+PART 2. Everything you should add to ALPHA X
+Here is the feature roadmap.
+1. Customer application
+This is what customers will see.
+A. Authentication and account management
+Include:
+- Mobile number registration.
+- OTP verification.
+- Email registration.
+- Google sign-in.
+- Forgot password.
+- Profile management.
+- Multiple delivery addresses.
+- Login session management.
+- Logout from all devices.
+- Account deletion.
+- Privacy settings.
+Special improvement: Allow people to explore the application without registering. Ask them to log in when they want to place an order.
+B. Homepage
+Your homepage should include:
+1. ALPHA X logo.
+2. Location selector.
+3. Search bar.
+4. Voice search.
+5. AI shopping assistant.
+6. Category navigation.
+7. Promotional banners.
+8. Today's deals.
+9. Trending products.
+10. Best sellers.
+11. Recommended products.
+12. Recently viewed products.
+13. Popular brands.
+14. Featured sellers.
+15. Special offers.
+16. Recently launched products.
+C. Product categories
+Build a flexible category system.
+Main category	Subcategories
+Electronics	Mobiles, laptops, TVs, cameras
+Fashion	Men, women, kids, footwear
+Home	Furniture, decoration, appliances
+Beauty	Makeup, skincare, personal care
+Grocery	Food, beverages, household essentials
+Books	Education, novels, stationery
+Sports	Fitness, outdoor, sports equipment
+Automotive	Car and bike accessories
+Toys	Educational toys, games
+Jewellery	Watches, jewellery, accessories
+
+
+Make categories manageable through the admin panel. You should be able to add new categories without changing application code.
+D. Search functionality
+This is one of the most important features.
+
+Add:
+- Search suggestions.
+- Search history.
+- Voice search.
+- Image-based search.
+- Product search.
+- Brand search.
+- Category search.
+- Spelling correction.
+- Related searches.
+- Trending searches.
+- Search filters.
+Example:
+
+A customer searches:
+
+"Best laptop under 50000 for coding."
+
+Your application should understand the budget and intended use, then display relevant products.
+E. Product details
+Every product page needs:
+- Product name.
+- Multiple images.
+- Product video.
+- Price.
+- Discount.
+- Product specifications.
+- Product description.
+- Available colours.
+- Available sizes.
+- Seller name.
+- Seller rating.
+- Delivery availability.
+- Expected delivery date.
+- Warranty.
+- Return policy.
+- Customer ratings.
+- Verified customer reviews.
+- Product questions and answers.
+Add a product comparison feature where customers can compare up to four products.
+F. Wishlist
+Customers should be able to:
+- Save products.
+- Remove products.
+- Create multiple wishlists.
+- Share wishlists.
+- Receive price-drop notifications.
+- Receive back-in-stock notifications.
+G. Shopping cart
+Include:
+- Add to cart.
+- Remove products.
+- Increase/decrease quantity.
+- Save for later.
+- Apply coupon.
+- Check delivery availability.
+- Show product price.
+- Show delivery charges.
+- Show taxes.
+- Show final payable amount.
+Important improvement: Never surprise customers with additional charges at the final payment screen.
+H. Checkout
+Include:
+1. Select delivery address.
+2. Select delivery option.
+3. Review products.
+4. Apply coupon.
+5. Show final bill.
+6. Select payment method.
+7. Confirm order.
+Payment methods can include supported UPI, cards, net banking and Cash on Delivery.
+I. Order management
+Add:
+- Order confirmation.
+- Order history.
+- Live tracking where supported.
+- Cancel order.
+- Request return.
+- Request replacement.
+- Refund tracking.
+- Download invoice.
+- Contact support.
+- Reorder products.
+J. Customer account
+Your account section should contain:
+- My profile.
+- My orders.
+- My wishlist.
+- My cart.
+- My addresses.
+- My payments.
+- My coupons.
+- My reviews.
+- Customer support.
+- Notification settings.
+- Privacy settings.
+- Logout.
+PART 3. Seller application
+This is extremely important because ALPHA X is a marketplace.
+
+Sellers should be able to manage their entire business through your platform.
+Seller features
+Feature	Function
+Registration	Create seller account
+Verification	Submit business/KYC information
+Dashboard	See business performance
+Add products	List products for sale
+Edit products	Update information
+Inventory	Manage available stock
+Orders	Process customer orders
+Returns	Handle return requests
+Earnings	See sales and earnings
+Settlements	Check payout status
+Analytics	Understand performance
+Promotions	Create discounts
+Reviews	View customer feedback
+Support	Contact ALPHA X
+
+
+Special features I recommend
+1. AI product listing
+
+A seller uploads a product image.
+
+AI suggests:
+- Product name.
+- Product category.
+- Product description.
+- Search keywords.
+- Product specifications where identifiable.
+The seller must review and approve the information before publishing.
+
+2. Automatic stock alerts
+
+When stock becomes low, notify the seller.
+
+3. Seller performance score
+
+Display:
+- Order completion rate.
+- Cancellation rate.
+- Return rate.
+- Customer ratings.
+- Delivery performance.
+4. Simple seller dashboard
+
+Keep the interface simple enough for a small shopkeeper who has never sold online.
+PART 4. Admin dashboard
+This is your company's control centre.
+
+You should be able to manage the entire ALPHA X marketplace.
+
+Your admin dashboard should have:
+Section	Control
+Overview	Total sales, orders and revenue
+Customers	Manage customer accounts
+Sellers	Verify and manage sellers
+Products	Approve and manage listings
+Categories	Add and edit categories
+Orders	Monitor every order
+Payments	Track payment status
+Commission	Configure commissions
+Settlements	Monitor seller payouts
+Coupons	Manage discounts
+Banners	Manage homepage promotions
+Returns	Manage disputes and refunds
+Reviews	Moderate suspicious reviews
+Reports	Generate business reports
+Support	Manage customer complaints
+Employees	Manage admin permissions
+
+
+Special admin features
+I strongly recommend:
+- Dashboard analytics.
+- Seller fraud detection.
+- Suspicious order detection.
+- Duplicate product detection.
+- Fake review detection.
+- Automated stock monitoring.
+- Sales reports.
+- Customer activity reports.
+- Revenue reports.
+- Complete audit history.
+Never give every employee full administrator access.
+PART 5. Advanced features to make ALPHA X different
+These features can become your competitive advantage.
+Feature	What it does
+AI Shopping Assistant	Helps customers find products
+Image Search	Search using product photographs
+Voice Search	Search using speech
+Smart Comparison	Compare four products
+Price Alerts	Notify about price drops
+Video Shopping	Product demonstration videos
+Smart Recommendations	Suggest relevant products
+Verified Reviews	Reviews from completed purchases
+Seller Score	Seller reliability information
+Smart Wishlist	Track saved products
+Regional Languages	Hindi and other languages
+Personalized Offers	Relevant customer promotions
+Back-in-stock Alert	Notify customers when available
+Recently Viewed	Show browsing history
+Smart Filters	More accurate product filtering
+
+
+My recommendation: Build the essential shopping experience first. Add advanced AI features once your core system works.
+PART 6. Ready-to-use AI development prompts
+Now comes the most useful part.
+
+These are the prompts you can copy and paste into your AI app builder.
+
+Important: Don't paste all of them simultaneously. Complete one stage, test it, and then move to the next.
+PROMPT 1 — Create the foundation of ALPHA X
+Start with this prompt.
+Act as a senior software architect, e-commerce product designer, backend engineer and full-stack developer.
+
+I want to build a professional multi-vendor e-commerce marketplace called ALPHA X.
+
+BUSINESS MODEL:
+
+ALPHA X is an India-first e-commerce marketplace inspired by Amazon and Flipkart.
+
+Third-party sellers will register and sell products through our platform. Customers will purchase products from different sellers.
+
+The long-term vision is to become an Everything Store with international expansion.
+
+MAIN SYSTEMS:
+1. Customer shopping application.
+2. Seller application/dashboard.
+3. Super administrator dashboard.
+4. Central backend.
+5. Central database.
+CUSTOMER FEATURES:
+- Registration and login.
+- OTP verification.
+- Homepage.
+- Product categories.
+- Product search.
+- AI shopping assistant.
+- Product filters.
+- Product details.
+- Product comparison.
+- Wishlist.
+- Shopping cart.
+- Coupons.
+- Checkout.
+- Payments.
+- Order tracking.
+- Cancellation.
+- Returns and refunds.
+- Customer reviews.
+- Notifications.
+- Customer support.
+- Profile and address management.
+SELLER FEATURES:
+- Seller registration.
+- Seller verification.
+- Seller dashboard.
+- Product listing.
+- Product image upload.
+- Inventory management.
+- Order management.
+- Pricing management.
+- Promotions.
+- Sales analytics.
+- Returns management.
+- Earnings and settlements.
+- Seller support.
+ADMIN FEATURES:
+- Overview dashboard.
+- Customer management.
+- Seller management.
+- Product approval.
+- Category management.
+- Order management.
+- Commission management.
+- Payment monitoring.
+- Settlement monitoring.
+- Return management.
+- Coupon management.
+- Banner management.
+- Reports and analytics.
+- Customer support.
+- Employee permissions.
+- Audit logs.
+DESIGN:
+
+Create a premium, modern, minimal and professional interface.
+
+Use:
+- Clean layouts.
+- Consistent spacing.
+- Modern typography.
+- High-quality product cards.
+- Smooth animations.
+- Responsive design.
+- Easy navigation.
+- Accessible buttons.
+- Consistent icons.
+The application must look like a serious international technology company.
+
+TECHNICAL REQUIREMENTS:
+- Use a maintainable architecture.
+- Build reusable components.
+- Use a secure backend.
+- Use a properly structured relational database.
+- Implement role-based permissions.
+- Implement API validation.
+- Handle loading states.
+- Handle empty states.
+- Handle errors.
+- Prevent duplicate orders.
+- Implement secure payment verification.
+- Protect customer and seller information.
+- Create proper database relationships.
+IMPORTANT DEVELOPMENT INSTRUCTIONS:
+1. First inspect the existing project and its technology stack.
+2. Do not delete working functionality.
+3. Do not create duplicate screens.
+4. Do not create multiple versions of the same feature.
+5. Maintain one consistent design system.
+6. Do not use fake payment success.
+7. Do not pretend that simulated data is real.
+8. Clearly identify incomplete integrations.
+9. Never expose secret keys in frontend code.
+10. Make the architecture scalable.
+Before writing code, provide:
+- Application architecture.
+- Feature breakdown.
+- Database design.
+- Screen navigation structure.
+- Backend module structure.
+- Development roadmap.
+Implement the project incrementally and test each module before proceeding.
+
+
+
+PROMPT 2 — Create a premium customer homepage
+Design and implement the complete ALPHA X e-commerce homepage.
+
+Brand: ALPHA X.
+
+Design direction: Premium, modern, minimal, international e-commerce brand.
+
+The homepage must contain:
+1. Brand logo and location selector.
+2. Search bar with voice search.
+3. AI shopping assistant entry point.
+4. Category navigation.
+5. Main promotional banner.
+6. Today's deals.
+7. Recommended products.
+8. Best sellers.
+9. Trending products.
+10. Popular brands.
+11. Featured sellers.
+12. Recently viewed products.
+13. New arrivals.
+14. Special offers.
+15. Personalized recommendations.
+PRODUCT CARDS:
+
+Each card must include:
+- Product image.
+- Product name.
+- Price.
+- Discount.
+- Rating.
+- Seller information where appropriate.
+- Delivery estimate.
+- Wishlist button.
+NAVIGATION:
+
+Create a simple bottom navigation:
+- Home.
+- Categories.
+- Wishlist.
+- Cart.
+- Account.
+DESIGN RULES:
+- Do not overcrowd the homepage.
+- Use consistent spacing.
+- Avoid excessive promotional banners.
+- Make product images clear.
+- Maintain responsive layouts.
+- Use reusable components.
+- Keep navigation consistent.
+- Show skeleton loading while products load.
+- Include proper empty and error states.
+Connect homepage sections to real backend product data. If backend integration is not available, clearly label demo data.
+
+Do not create duplicate sections or repeated navigation options.
+
+
+
+PROMPT 3 — Product page, search and filters
+Build a complete product discovery and product details system for ALPHA X.
+
+SEARCH:
+
+Implement:
+- Search suggestions.
+- Search history.
+- Trending searches.
+- Voice search interface.
+- Spelling correction.
+- Brand search.
+- Category search.
+- Product search.
+- Relevant search results.
+FILTERS:
+- Price range.
+- Brand.
+- Rating.
+- Discount.
+- Availability.
+- Colour.
+- Size.
+- Delivery estimate.
+- Product specifications.
+PRODUCT DETAILS:
+
+Display:
+- Product title.
+- Multiple product images.
+- Product video.
+- Current price.
+- Original price.
+- Discount.
+- Product description.
+- Specifications.
+- Available variants.
+- Seller information.
+- Seller rating.
+- Customer reviews.
+- Warranty.
+- Return policy.
+- Delivery availability.
+- Expected delivery date.
+ADDITIONAL FEATURES:
+- Add to wishlist.
+- Add to cart.
+- Buy now.
+- Share product.
+- Compare products.
+- Ask product questions.
+- Report incorrect listing.
+PRODUCT COMPARISON:
+
+Allow customers to compare up to four products.
+
+Display their specifications, prices, ratings, warranties and delivery estimates side by side.
+
+IMPORTANT:
+
+Never show invented stock quantities, reviews, ratings or seller details.
+
+Connect everything to the backend.
+
+
+
+PROMPT 4 — Build the seller dashboard
+Build a complete multi-vendor seller management platform for ALPHA X.
+
+SELLER REGISTRATION:
+
+Create a guided seller registration system.
+
+Collect required business and verification details securely.
+
+Include a verification status:
+- Not submitted.
+- Pending.
+- Approved.
+- Rejected.
+- Additional information required.
+PRODUCT MANAGEMENT:
+
+Allow sellers to:
+- Add products.
+- Upload images.
+- Edit descriptions.
+- Set prices.
+- Add product variants.
+- Manage inventory.
+- Set shipping information.
+- Save drafts.
+- Submit products for approval.
+ORDER MANAGEMENT:
+
+Show:
+- New orders.
+- Confirmed orders.
+- Processing orders.
+- Packed orders.
+- Shipped orders.
+- Delivered orders.
+- Cancelled orders.
+- Return requests.
+FINANCIAL DASHBOARD:
+
+Display:
+- Gross sales.
+- Marketplace commission.
+- Applicable fees and adjustments.
+- Refunds.
+- Pending settlements.
+- Completed settlements.
+ANALYTICS:
+
+Display:
+- Total products.
+- Total orders.
+- Sales performance.
+- Best-selling products.
+- Product views.
+- Conversion performance.
+- Customer ratings.
+ADDITIONAL FEATURES:
+- Low-stock notifications.
+- Product performance reports.
+- Seller support.
+- Promotions.
+- Customer reviews.
+SECURITY:
+
+Sellers must only access their own products, orders, financial records and customers' information necessary to fulfil orders.
+
+Every sensitive operation must be authorized on the server.
+
+Use real database data and do not simulate successful payments or settlements.
+
+
+
+PROMPT 5 — Build the super admin panel
+Create a professional ALPHA X super administrator dashboard.
+
+The administrator should be able to control the complete marketplace.
+
+DASHBOARD:
+
+Show:
+- Total customers.
+- Active sellers.
+- Total products.
+- Total orders.
+- Completed orders.
+- Cancelled orders.
+- Gross merchandise value.
+- Marketplace revenue.
+- Pending seller verification.
+- Pending returns.
+- Pending support tickets.
+CUSTOMER MANAGEMENT:
+
+View and manage customer accounts, subject to proper permissions.
+
+SELLER MANAGEMENT:
+- Review applications.
+- Approve sellers.
+- Reject sellers.
+- Request additional verification.
+- Suspend sellers.
+- Review seller performance.
+PRODUCT MANAGEMENT:
+- Review new listings.
+- Approve products.
+- Reject products.
+- Remove prohibited listings.
+- Manage categories.
+- Detect duplicate listings.
+ORDER MANAGEMENT:
+
+Monitor orders and investigate disputes.
+
+FINANCIAL MANAGEMENT:
+- View payment transactions.
+- View marketplace commissions.
+- View refunds.
+- Monitor seller settlements.
+- Export financial reports.
+CONTENT MANAGEMENT:
+- Homepage banners.
+- Promotional sections.
+- Featured categories.
+- Featured brands.
+- Campaigns.
+SECURITY:
+
+Implement:
+- Role-based access.
+- Administrator authentication.
+- Multi-factor authentication.
+- Audit logs.
+- Sensitive-action confirmation.
+- Employee permission management.
+Ensure all permissions are checked on the backend, not just hidden in the interface.
+
+
+
+PROMPT 6 — Backend and database
+This is probably the most important technical prompt.
+Design and implement the backend and database for ALPHA X.
+
+The marketplace must support multiple sellers and customers.
+
+Create properly related database tables for:
+1. Users.
+2. User roles.
+3. Customer profiles.
+4. Seller profiles.
+5. Seller verification records.
+6. Addresses.
+7. Categories.
+8. Brands.
+9. Products.
+10. Product variants.
+11. Product images.
+12. Inventory.
+13. Shopping carts.
+14. Cart items.
+15. Wishlists.
+16. Orders.
+17. Order items.
+18. Payment attempts.
+19. Payment webhook events.
+20. Shipments.
+21. Tracking events.
+22. Returns.
+23. Refunds.
+24. Reviews.
+25. Coupons.
+26. Promotions.
+27. Commissions.
+28. Seller settlements.
+29. Notifications.
+30. Support tickets.
+31. Audit logs.
+IMPORTANT LOGIC:
+- One customer can purchase from multiple sellers.
+- Each product must belong to a seller.
+- Inventory must be synchronized.
+- Prevent overselling.
+- Store order prices as transaction snapshots.
+- Maintain complete order history.
+- Prevent duplicate orders.
+- Support partial cancellation and returns.
+- Calculate seller earnings transparently.
+- Keep payment records immutable.
+- Record payment webhook events safely.
+- Prevent duplicate refund processing.
+- Implement transaction-safe database operations.
+SECURITY:
+- Enforce role-based access control.
+- Validate all API requests.
+- Protect against unauthorized access.
+- Use secure authentication.
+- Keep credentials in server-side environment variables.
+- Encrypt sensitive data where appropriate.
+- Maintain audit logs.
+- Implement database backups.
+Do not store customers' raw card details.
+
+Provide database migrations, API documentation and test cases.
+
+Before implementation, explain the database relationships and order lifecycle.
+
+
+
+PROMPT 7 — Payments, delivery and returns
+Build the complete order management, payment, shipping and return workflow for ALPHA X.
+
+PAYMENTS:
+
+Support integration with an appropriate payment provider for:
+- UPI.
+- Debit cards.
+- Credit cards.
+- Net banking.
+- Supported wallets.
+- Cash on Delivery where eligible.
+Use the payment provider's secure checkout and APIs.
+
+Payment status must only be confirmed after secure server-side verification.
+
+ORDER MANAGEMENT:
+
+Implement:
+- Order creation.
+- Stock reservation.
+- Payment verification.
+- Order confirmation.
+- Seller notification.
+- Seller order processing.
+- Shipment creation.
+- Delivery tracking.
+- Order completion.
+MULTI-SELLER ORDERS:
+
+If a customer purchases products from three sellers, create an appropriate parent order and separate seller-specific fulfilment records.
+
+Track each seller's shipment independently.
+
+RETURNS:
+
+Implement:
+- Return request.
+- Return reason.
+- Supporting photographs.
+- Eligibility verification.
+- Seller response.
+- Return pickup status.
+- Inspection status.
+- Refund initiation.
+- Refund completion.
+IMPORTANT:
+- Never show false payment success.
+- Never mark an order delivered without verified delivery information.
+- Do not issue duplicate refunds.
+- Maintain payment and settlement records.
+- Show customers accurate order statuses.
+Use a suitable shipping integration when credentials are available. Clearly distinguish simulated tracking from actual tracking.
+
+
+
+PROMPT 8 — AI features
+Implement AI-powered shopping features for ALPHA X.
+1. AI SHOPPING ASSISTANT
+Allow customers to ask shopping questions in natural language.
+
+Example:
+"I need a laptop for programming under ₹60,000."
+
+The assistant should understand the requirements and search the product catalogue.
+2. IMAGE SEARCH
+Allow customers to upload an image and find visually similar products.
+3. VOICE SEARCH
+Allow customers to search using voice.
+4. SMART RECOMMENDATIONS
+Recommend products based on relevant browsing activity, shopping preferences and previous purchases, subject to privacy settings.
+5. AI PRODUCT LISTING
+Help sellers generate:
+- Product titles.
+- Product descriptions.
+- Search keywords.
+- Category suggestions.
+Require seller approval before publishing generated content.
+6. PRODUCT COMPARISON
+Compare specifications of selected products.
+7. CUSTOMER SUPPORT ASSISTANT
+Answer common questions using verified order, product and policy information.
+
+IMPORTANT AI RULES:
+- Do not invent product specifications.
+- Do not invent prices.
+- Do not invent stock availability.
+- Do not invent delivery dates.
+- Do not invent customer reviews.
+- Do not invent return policies.
+- Use actual backend data.
+- Clearly identify uncertain information.
+- Allow customers to contact human support.
+- Protect customer personal information.
+Keep AI features modular so that they can be improved independently.
+
+
+
+PROMPT 9 — Testing and fixing errors
+Never skip this step.
+Act as a senior QA engineer and application security tester.
+
+Inspect the entire ALPHA X application.
+
+Test the following:
+
+AUTHENTICATION:
+- Registration.
+- Login.
+- OTP verification.
+- Password recovery.
+- Session expiration.
+CUSTOMER:
+- Homepage.
+- Search.
+- Filters.
+- Product details.
+- Wishlist.
+- Cart.
+- Checkout.
+- Payments.
+- Order tracking.
+- Cancellation.
+- Returns.
+- Refunds.
+SELLER:
+- Registration.
+- Verification.
+- Product creation.
+- Product editing.
+- Inventory.
+- Order processing.
+- Earnings.
+ADMIN:
+- Seller approval.
+- Product approval.
+- Order monitoring.
+- Customer management.
+- Commission management.
+- Refund management.
+TECHNICAL TESTS:
+- Broken navigation.
+- Duplicate screens.
+- Duplicate API requests.
+- Database errors.
+- Missing images.
+- Incorrect calculations.
+- Mobile responsiveness.
+- Loading failures.
+- Security vulnerabilities.
+- Unauthorized access.
+- Payment webhook failures.
+- Inventory synchronization failures.
+Test realistic scenarios involving multiple sellers and customers.
+
+For every issue:
+1. Identify the problem.
+2. Explain its cause.
+3. Assign severity.
+4. Fix it.
+5. Test the fix.
+6. Confirm that the fix did not break another feature.
+Do not claim that the application has passed testing unless the tests were actually executed.
+
+Generate a final testing report with unresolved issues.
+
+
+
+PART 7. Small problems that you should specifically prevent
+These are often overlooked during AI app development.
+Problem	What you should implement
+Customer clicks Buy twice	Duplicate order prevention
+Seller changes price after checkout	Save price at order time
+Two people buy the last item	Atomic stock reservation
+Payment succeeds but app crashes	Payment recovery and reconciliation
+Customer pays but order doesn't appear	Reliable payment webhook processing
+Seller doesn't dispatch	Dispatch deadline and alerts
+Product image doesn't load	Image fallback
+Coupon is used twice	Coupon usage validation
+Refund is processed twice	Refund idempotency
+Customer enters wrong PIN code	Delivery serviceability checks
+Product becomes unavailable	Stock validation
+Seller uploads misleading details	Product moderation
+Customer receives the wrong item	Return and dispute process
+Customer has no internet	Retry and error recovery
+Notification appears repeatedly	Notification deduplication
+
+
+My personal priority: Solve payment errors, inventory errors, incorrect orders and refund delays before adding fancy AI animations.
+PART 8. Technology and infrastructure
+You need a real backend, not just screens that look functional.
+
+A possible technology architecture:
+Component	Suggested technology
+Frontend	React / Flutter
+Backend	Node.js with NestJS
+Database	PostgreSQL
+Authentication	Firebase Auth or suitable alternative
+Image storage	Amazon S3 / Cloudinary
+Search	Elasticsearch
+Notifications	Firebase Cloud Messaging
+Payment integration	Appropriate payment provider
+Hosting	Suitable cloud infrastructure
+Error monitoring	Sentry
+Analytics	Firebase Analytics
+
+
+You don't need every tool immediately. Select the architecture based on what your AI builder supports.
+
+Since you haven't settled the platform choices yet, I'd recommend starting with a responsive website/PWA prototype. It can work on mobile and desktop browsers. You can develop dedicated Android and iOS applications after the core workflows are tested.
+PART 9. Important legal and security considerations in India
+Because ALPHA X will operate as a marketplace, you need to consider:
+1. Consumer Protection (E-Commerce) Rules, 2020.
+2. Digital Personal Data Protection Act, 2023 and applicable 2025 Rules.
+3. GST requirements for e-commerce operators.
+4. Seller verification.
+5. Payment processing requirements.
+6. Consumer grievance management.
+7. Return and refund policies.
+8. Seller agreements.
+The Government has published the E-Commerce Rules and amendments through the Department of Consumer Affairs. Consumer Affairs
+
+The DPDP Rules were notified in November 2025, with phased implementation provisions. Design your application around consent, data minimisation, security and privacy from the beginning. Press Information Bureau
+
+Use an appropriately authorised payment provider and understand the RBI's 2025 Payment Aggregator Directions, especially before implementing marketplace settlements. Reserve Bank of India
+
+Since you're under 18, involve a parent or guardian and qualified professionals for company registration, financial accounts, contracts, payment-provider onboarding and legal compliance.
+PART 10. The actual development order
+Here is the order I want you to follow.
+Stage	What to build	Priority
+1	Brand identity and design system	High
+2	Homepage	High
+3	Login and registration	Critical
+4	Categories and search	Critical
+5	Product listing and details	Critical
+6	Cart and wishlist	Critical
+7	Backend and database	Critical
+8	Seller registration	Critical
+9	Seller dashboard	Critical
+10	Admin panel	Critical
+11	Checkout and payment	Critical
+12	Orders and delivery	Critical
+13	Returns and refunds	Critical
+14	AI features	Later
+15	Testing and security	Critical
+16	Limited public launch	Critical
+
+
+Do not attempt to launch every category, every feature and every delivery service on day one.
+
+Keep the architecture ready for everything, but launch with a manageable selection of products and verified sellers.
+PART 11. Five rules when building through AI
+These are extremely important.
+
+Rule 1: Never tell AI to build the entire application at once.
+
+Build individual modules and test them.
+
+Rule 2: Always ask AI to inspect your existing code before modifying it.
+
+Otherwise, it might remove existing functionality or create duplicate screens.
+
+Rule 3: Always connect your screens to real backend functionality.
+
+A button that looks good but doesn't work isn't a completed feature.
+
+Rule 4: Maintain a project document.
+
+Ask your AI to maintain:
+- Completed features.
+- Incomplete features.
+- Database structure.
+- API structure.
+- Known errors.
+- Remaining tasks.
+Rule 5: Always test before moving to the next module.
+
+Don't let small errors accumulate until the application becomes difficult to repair.
+PART 12. Let's decide how to build ALPHA X
+I need three details to make the next development instructions much more precise.
+
+1. Which AI tool are you using to build ALPHA X?
+
+A. Google AI Studio
+B. Google Antigravity
+C. Lovable
+D. Bolt.new
+E. Replit
+F. Other
+
+2. What do you want to develop first?
+
+A. Customer shopping application.
+B. Seller application.
+C. Admin dashboard.
+D. All three, connected to one backend.
+
+3. Which design style do you prefer?
+
+A. Amazon-style — information-rich, practical and familiar.
+
+B. Apple-style — minimal, premium and clean.
+
+C. Flipkart-style — colourful, promotional and dynamic.
+
+D. Custom ALPHA X — premium, minimal, modern and technology-focused.
+My recommendation
+D + D: Build all three interconnected systems using a custom premium ALPHA X design.

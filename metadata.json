@@ -1,0 +1,6 @@
+{
+  "name": "ALPHA X - Next-Gen Multi-Vendor Marketplace",
+  "description": "Unified multi-vendor e-commerce marketplace featuring Customer Shopping with AI Assistant, Seller Hub with inventory & AI listing generator, and Super Admin Governance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
